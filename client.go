@@ -11,17 +11,8 @@ import (
 )
 
 func menu() {
-	scanner := bufio.NewScanner(os.Stdin)
 	for {
-		fmt.Println("1. Send message to server")
-		fmt.Println("2. Exit")
-		scanner.Scan()
-		sc := scanner.Text()
-		if sc == "1" {
-			sendMessageMenu()
-		} else if sc == "2" {
-			break
-		}
+		sendMessageMenu()
 	}
 }
 
